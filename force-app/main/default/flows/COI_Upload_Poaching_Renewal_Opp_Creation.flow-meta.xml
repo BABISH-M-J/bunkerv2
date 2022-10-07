@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <decisions>
+        <name>COI_Upload_Poaching_Renewal_Opporunity</name>
+        <label>COI Upload Poaching Renewal Opporunity</label>
+        <locationX>304</locationX>
+        <locationY>378</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>COI_Upload_Poaching_Renewal_Creation</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>COIUploadPoaching</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed Lost</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Lost_Reason__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>COI Compliant</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>COI_Poaching_Renewal_Opp</targetReference>
+            </connector>
+            <label>COI Upload Poaching Renewal Creation</label>
+        </rules>
+    </decisions>
+    <interviewLabel>COI Upload Poaching Renewal Opp Creation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>COI Upload Poaching Renewal Opp Creation</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>COI_Poaching_Renewal_Opp</name>
+        <label>COI Poaching Renewal Opp</label>
+        <locationX>575</locationX>
+        <locationY>375</locationY>
+        <connector>
+            <targetReference>Opp_Details</targetReference>
+        </connector>
+        <inputReference>$Record</inputReference>
+    </recordCreates>
+    <recordUpdates>
+        <name>Opp_Details</name>
+        <label>Opp Details - COI Poaching Renewal</label>
+        <locationX>834</locationX>
+        <locationY>376</locationY>
+        <inputAssignments>
+            <field>CloseDate</field>
+            <value>
+                <elementReference>$Record.COI_Renewal_Date__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <stringValue>00541000004xqyrAAA</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>StageName</field>
+            <value>
+                <stringValue>New Submission</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>COI_Upload_Poaching_Renewal_Opporunity</targetReference>
+        </connector>
+        <object>Opportunity</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

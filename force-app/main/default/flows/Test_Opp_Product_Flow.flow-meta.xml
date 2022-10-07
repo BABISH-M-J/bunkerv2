@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <apiVersion>55.0</apiVersion>
+    <dynamicChoiceSets>
+        <name>AddBroker</name>
+        <dataType>Multipicklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Broker__c</picklistField>
+        <picklistObject>OpportunityLineItem</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>ChooseCarrier</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Carrier__c</picklistField>
+        <picklistObject>OpportunityLineItem</picklistObject>
+    </dynamicChoiceSets>
+    <interviewLabel>Test - Opp Product Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Test - Opp Product Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Carrier_List</name>
+        <label>Get Carriers &amp; Brokers</label>
+        <locationX>176</locationX>
+        <locationY>158</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Enter_Policy_Details</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0122M000001UYk4QAG</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <screens>
+        <name>Enter_Policy_Details</name>
+        <label>Enter Policy Details</label>
+        <locationX>176</locationX>
+        <locationY>278</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>CarrierName</name>
+            <choiceReferences>ChooseCarrier</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Select Carrier from the List</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Enter_Policy_Number</name>
+            <dataType>String</dataType>
+            <fieldText>Enter Policy Number</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Enter_Effective_Date</name>
+            <dataType>Date</dataType>
+            <fieldText>Enter Effective Date</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Enter_Expiration_Date</name>
+            <dataType>Date</dataType>
+            <fieldText>Enter Expiration Date</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>SelectBroker</name>
+            <choiceReferences>AddBroker</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Select Broker</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>false</isRequired>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>CarrierName</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Broker</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Enter_Broker_Carrier_Name</name>
+            <dataType>String</dataType>
+            <fieldText>Enter Broker Carrier Name</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>ChooseCarrier</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Broker</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Billing_Details</name>
+            <fieldText>Billing Details</fieldText>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Billing_Details_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Sales_Price</name>
+                    <dataType>Currency</dataType>
+                    <fieldText>Sales Price</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <isRequired>false</isRequired>
+                    <scale>0</scale>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Carrier_List</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+</Flow>

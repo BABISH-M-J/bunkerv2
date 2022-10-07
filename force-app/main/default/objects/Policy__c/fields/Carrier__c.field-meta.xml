@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Carrier__c</fullName>
+    <externalId>false</externalId>
+    <label>Carrier</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ace Amer Ins Co</fullName>
+                <default>false</default>
+                <label>Ace Amer Ins Co</label>
+            </value>
+            <value>
+                <fullName>Ace Amer Ins Co - Marketplace</fullName>
+                <default>false</default>
+                <label>Ace Amer Ins Co - Marketplace</label>
+            </value>
+            <value>
+                <fullName>Ace Fire Underwriters Ins Co</fullName>
+                <default>false</default>
+                <label>Ace Fire Underwriters Ins Co</label>
+            </value>
+            <value>
+                <fullName>Ace Fire Underwriters Ins Co - Marketplace</fullName>
+                <default>false</default>
+                <label>Ace Fire Underwriters Ins Co - Marketplace</label>
+            </value>
+            <value>
+                <fullName>Ace Prop &amp; Cas Ins Co</fullName>
+                <default>false</default>
+                <label>Ace Prop &amp; Cas Ins Co</label>
+            </value>
+            <value>
+                <fullName>Ace Prop &amp; Cas Ins co - Marketplace</fullName>
+                <default>false</default>
+                <label>Ace Prop &amp; Cas Ins co - Marketplace</label>
+            </value>
+            <value>
+                <fullName>Acuity</fullName>
+                <default>false</default>
+                <label>Acuity</label>
+            </value>
+            <value>
+                <fullName>Broker</fullName>
+                <default>false</default>
+                <label>Broker</label>
+            </value>
+            <value>
+                <fullName>CFC Underwriting</fullName>
+                <default>false</default>
+                <label>CFC Underwriting</label>
+            </value>
+            <value>
+                <fullName>Chubb Indemnity Insurance Company - Marketplace</fullName>
+                <default>false</default>
+                <label>Chubb Indemnity Insurance Company - Marketplace</label>
+            </value>
+            <value>
+                <fullName>Chubb National Insurance Company - Marketplace</fullName>
+                <default>false</default>
+                <label>Chubb National Insurance Company - Marketplace</label>
+            </value>
+            <value>
+                <fullName>Coalition</fullName>
+                <default>false</default>
+                <label>Coalition</label>
+            </value>
+            <value>
+                <fullName>Coterie</fullName>
+                <default>false</default>
+                <label>Coterie</label>
+            </value>
+            <value>
+                <fullName>Crum and Forster</fullName>
+                <default>false</default>
+                <label>Crum and Forster</label>
+            </value>
+            <value>
+                <fullName>Executive Risk Indemnity - Marketplace</fullName>
+                <default>false</default>
+                <label>Executive Risk Indemnity - Marketplace</label>
+            </value>
+            <value>
+                <fullName>Federal Insurance Company - Marketplace</fullName>
+                <default>false</default>
+                <label>Federal Insurance Company - Marketplace</label>
+            </value>
+            <value>
+                <fullName>Great American</fullName>
+                <default>false</default>
+                <label>Great American</label>
+            </value>
+            <value>
+                <fullName>Hanover Ins Co GRP</fullName>
+                <default>false</default>
+                <label>Hanover Ins Co GRP</label>
+            </value>
+            <value>
+                <fullName>Hartford Cas Ins Co</fullName>
+                <default>false</default>
+                <label>Hartford Cas Ins Co</label>
+            </value>
+            <value>
+                <fullName>Hiscox Ins Co Inc</fullName>
+                <default>false</default>
+                <label>Hiscox Ins Co Inc</label>
+            </value>
+            <value>
+                <fullName>Liberty Mutual</fullName>
+                <default>false</default>
+                <label>Liberty Mutual</label>
+            </value>
+            <value>
+                <fullName>Markel Ins Co</fullName>
+                <default>false</default>
+                <label>Markel Ins Co</label>
+            </value>
+            <value>
+                <fullName>Mesa Underwriters</fullName>
+                <default>false</default>
+                <label>Mesa Underwriters</label>
+            </value>
+            <value>
+                <fullName>Old Republic</fullName>
+                <default>false</default>
+                <label>Old Republic</label>
+            </value>
+            <value>
+                <fullName>One Beacon</fullName>
+                <default>false</default>
+                <label>One Beacon</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Pacific Ind Ins Co</fullName>
+                <default>false</default>
+                <label>Pacific Ind Ins Co</label>
+            </value>
+            <value>
+                <fullName>Pacific Ind Ins Co - Marketplace</fullName>
+                <default>false</default>
+                <label>Pacific Ind Ins Co - Marketplace</label>
+            </value>
+            <value>
+                <fullName>Philadelphia</fullName>
+                <default>false</default>
+                <label>Philadelphia</label>
+            </value>
+            <value>
+                <fullName>Progressive</fullName>
+                <default>false</default>
+                <label>Progressive</label>
+            </value>
+            <value>
+                <fullName>Starr</fullName>
+                <default>false</default>
+                <label>Starr</label>
+            </value>
+            <value>
+                <fullName>Travelers Commercial Ins Co</fullName>
+                <default>false</default>
+                <label>Travelers Commercial Ins Co</label>
+            </value>
+            <value>
+                <fullName>Twin City Fire Insurance Company</fullName>
+                <default>false</default>
+                <label>Twin City Fire Insurance Company</label>
+            </value>
+            <value>
+                <fullName>Underwriters At Lloyds London</fullName>
+                <default>false</default>
+                <label>Underwriters At Lloyds London</label>
+            </value>
+            <value>
+                <fullName>West Bend</fullName>
+                <default>false</default>
+                <label>West Bend</label>
+            </value>
+            <value>
+                <fullName>Yrisk</fullName>
+                <default>false</default>
+                <label>Yrisk</label>
+            </value>
+            <value>
+                <fullName>Zurich</fullName>
+                <default>false</default>
+                <label>Zurich</label>
+            </value>
+            <value>
+                <fullName>Apollo</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Apollo</label>
+            </value>
+            <value>
+                <fullName>Atrium</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Atrium</label>
+            </value>
+            <value>
+                <fullName>Coversmart</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Coversmart</label>
+            </value>
+            <value>
+                <fullName>Nautilus</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Nautilus</label>
+            </value>
+            <value>
+                <fullName>Pan Amer Life Ins Co</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pan Amer Life Ins Co</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

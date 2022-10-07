@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <interviewLabel>Clark Lois Share Call Script {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Clark Lois Share Call Script</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>Call_Script_Intro_Call</name>
+        <label>Call Script - Intro Call</label>
+        <locationX>517</locationX>
+        <locationY>108</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Clark_Lois_Share_Script</name>
+            <fieldText>Hi [enter name here] - I’m [Your Name] from Bunker.  We are the insurance broker for one of your contractors, [Enter Contractor Name here].  They shared their certificate of insurance with you through our platform - so you should have received an email to view their digital certificate and specific insurance details.  
+
+I wanted to reach out and introduce myself, and ask if you had questions regarding the certificate or coverage details for your contractor.  
+
+Did you receive the email to the Bunker platform with the contractors Live insurance certificate? 
+Did you have any questions about the Live certificate or the contractors coverage? 
+Did you know that you can use Bunker’s system for free to manage all of your certificates of insurance?</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Confirmed_Receipt</name>
+            <dataType>Boolean</dataType>
+            <fieldText>Confirmed Receipt</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Setup_Account</name>
+            <dataType>Boolean</dataType>
+            <fieldText>Setup Account</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <startElementReference>Call_Script_Intro_Call</startElementReference>
+    <status>Draft</status>
+</Flow>

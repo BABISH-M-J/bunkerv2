@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Insurance Sales</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Before moving the Opportunity to &amp;quot;Proposal Sent to Customer&amp;quot; please verify the following is added to the Opportunity Products-&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Billing Type&lt;/li&gt;&lt;li&gt;Commission Rate&lt;/li&gt;&lt;li&gt;Carrier&lt;ul&gt;&lt;li&gt;Please add Broker information if Carrier is Broker&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Sales Price&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Applications Sent to Carrier</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Before moving the Opportunity to &amp;quot;Closed Won&amp;quot; please verify the following is added to the Opportunity Products-&lt;/p&gt;&lt;p class=&quot;ql-indent-1&quot;&gt;&lt;b&gt;For Direct Bill Products-&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Coverage Limits&lt;ul&gt;&lt;li&gt;Effective Date&lt;/li&gt;&lt;li&gt;Expiration Date&lt;/li&gt;&lt;li&gt;Carrier Policy Number&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p class=&quot;ql-indent-1&quot;&gt;&lt;b&gt;For Agency/Agency - Premium Fincancing Products-&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Coverage Limits&lt;ul&gt;&lt;li&gt;Effective Date&lt;/li&gt;&lt;li&gt;Expiration Date&lt;/li&gt;&lt;li&gt;Carrier Policy Number&lt;/li&gt;&lt;li&gt;Invoice Date&lt;/li&gt;&lt;li&gt;Invoice Number&lt;/li&gt;&lt;li&gt;Invoice Paid&lt;/li&gt;&lt;li&gt;Transaction Date&lt;/li&gt;&lt;li&gt;Payment ID Number&lt;/li&gt;&lt;li&gt;Billing Frequency&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Proposals Sent to Customer</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Insurance_Sales</recordTypeName>
+</PathAssistant>

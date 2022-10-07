@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <interviewLabel>Move-Recurly Account {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Move-Recurly Account</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Add_Recurly_Account_ID_to_Account_Object</name>
+        <label>Add Recurly Account ID to Account Object</label>
+        <locationX>557</locationX>
+        <locationY>352</locationY>
+        <inputAssignments>
+            <field>Recurly_Account__c</field>
+            <value>
+                <elementReference>$Record.recurly_v2__Account_ID__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.recurly_v2__Account__r</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>490</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Add_Recurly_Account_ID_to_Account_Object</targetReference>
+        </connector>
+        <object>recurly_v2__Recurly_Account__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

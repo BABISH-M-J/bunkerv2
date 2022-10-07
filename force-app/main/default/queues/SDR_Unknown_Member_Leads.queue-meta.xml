@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>SDR - Unknown Member Leads</name>
+    <queueMembers>
+        <users>
+            <user>alisonnarveson@buildbunker.com</user>
+            <user>blake@svpartners.com</user>
+            <user>marketosalesforce@buildbunker.com</user>
+            <user>mike@buildbunker.com</user>
+            <user>nick@buildbunker.com</user>
+            <user>pat@buildbunker.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

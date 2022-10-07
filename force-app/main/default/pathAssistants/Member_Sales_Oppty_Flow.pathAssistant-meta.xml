@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Member Sales Oppty. Flow</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Repeat! &lt;/p&gt;&lt;ul&gt;&lt;li&gt;Fifth Customer Engagement Closed&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Closed Won</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>DM_Demo__c</fieldNames>
+        <fieldNames>Product_Champion_Demo__c</fieldNames>
+        <info>&lt;p&gt;Stakeholder Buy-In &amp;amp; Timeline&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Identify Contact Roles (associate contacts to Contact Roles section)&lt;/li&gt;&lt;li&gt;Demo Bunker w/ ALL applicable stakeholders&lt;/li&gt;&lt;li&gt;Identify go-live/close-date&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Development</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Member_Sales</recordTypeName>
+</PathAssistant>

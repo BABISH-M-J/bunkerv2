@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Minimum_Premium_Amount_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( Minimum_Premium__c, OR (ISBLANK( Minimum_Premium_Amount__c )))</errorConditionFormula>
+    <errorDisplayField>Deposit_Amount__c</errorDisplayField>
+    <errorMessage>If there is a policy deposit the policy deposit amount must be populated.</errorMessage>
+</ValidationRule>

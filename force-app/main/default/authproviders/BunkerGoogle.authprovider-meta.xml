@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
+    <consumerKey>526494202819-mrg1sbc7c5ujn77a81pkd74eguea1gpv.apps.googleusercontent.com</consumerKey>
+    <consumerSecret>DcHoUj2Q2wJy9m28cE1lPKD6l0uufG9LcEEY92ILatc=</consumerSecret>
+    <friendlyName>Google</friendlyName>
+    <includeOrgIdInIdentifier>false</includeOrgIdInIdentifier>
+    <providerType>Google</providerType>
+    <sendAccessTokenInHeader>false</sendAccessTokenInHeader>
+    <sendClientCredentialsInHeader>false</sendClientCredentialsInHeader>
+    <sendSecretInApis>true</sendSecretInApis>
+</AuthProvider>

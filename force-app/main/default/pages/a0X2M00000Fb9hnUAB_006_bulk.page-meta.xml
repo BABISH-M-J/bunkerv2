@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>53.0</apiVersion>
+    <availableInTouch>false</availableInTouch>
+    <confirmationTokenRequired>false</confirmationTokenRequired>
+    <label>a0X2M00000Fb9hnUAB_006_bulk</label>
+    <packageVersions>
+        <majorNumber>3</majorNumber>
+        <minorNumber>36</minorNumber>
+        <namespace>pdffiller_sfree</namespace>
+    </packageVersions>
+</ApexPage>

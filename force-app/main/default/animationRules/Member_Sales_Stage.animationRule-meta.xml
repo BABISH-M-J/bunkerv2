@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnimationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <animationFrequency>always</animationFrequency>
+    <developerName>Member_Sales_Stage</developerName>
+    <isActive>true</isActive>
+    <masterLabel>Member Sales Stage</masterLabel>
+    <recordTypeContext>Custom</recordTypeContext>
+    <recordTypeName>Member_Insurance</recordTypeName>
+    <sobjectType>Opportunity</sobjectType>
+    <targetField>Sales_Stage__c</targetField>
+    <targetFieldChangeToValues>Application Received,Quote Accepted,Done</targetFieldChangeToValues>
+</AnimationRule>

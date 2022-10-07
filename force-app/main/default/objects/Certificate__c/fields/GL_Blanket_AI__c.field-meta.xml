@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GL_Blanket_AI__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND( Opportunity_Product__r.Product_Name__c = &quot;General Liability&quot;,TEXT( Opportunity_Product__r.Additional_Insured__c ) = &quot;Blanket&quot;)</formula>
+    <label>GL Blanket AI</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

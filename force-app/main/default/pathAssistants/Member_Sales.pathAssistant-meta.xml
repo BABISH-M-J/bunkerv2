@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Lead</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Member Sales</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Insurance_as_a_Barrier__c</fieldNames>
+        <fieldNames>Authority__c</fieldNames>
+        <fieldNames>Uninsured_Customers__c</fieldNames>
+        <fieldNames>Poachable_Customers__c</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;PROBLEM ID&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Define your role, team hierarchy&lt;/li&gt;&lt;li&gt;How do you expect your insurance mgmt. requirements to change over the next 6 - 18 mo.?&lt;/li&gt;&lt;li&gt;What parts of the compliance mgmt. process are painful? &lt;/li&gt;&lt;li&gt;How often does insurance create delay?&lt;/li&gt;&lt;li&gt;Is insurance required for engagement?&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;SOLUTION ID&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Goal to grow/reduce number of contractors or provide more for current?&lt;/li&gt;&lt;li&gt;Current program size?&lt;/li&gt;&lt;li&gt;What is the avg. length of single engagement?&lt;/li&gt;&lt;li&gt;Do IC/suppliers work on more than 1 project at a time?&lt;/li&gt;&lt;li&gt;% breakdown IC &amp;amp; suppliers wi/in contingent workforce?&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;RESOURCES:&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://https://docs.google.com/document/d/1B8Y3XZDSsiVIlT-TpogXIsE9Im2AjvL74uda5M8m79k/edit?usp=sharing&quot; target=&quot;_blank&quot;&gt;Scripts&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://https://docs.google.com/document/d/1nWo04_IgIlRv-YB1VYRV0nLoQjXR1qZYp5wPP2d5xg4/edit?usp=sharing&quot; target=&quot;_blank&quot;&gt;Email Templates &lt;/a&gt;&lt;/p&gt;</info>
+        <picklistValueName>Discovery</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Manages_Certificates_of_Insurance_COI__c</fieldNames>
+        <fieldNames>Manage_Certificates_For__c</fieldNames>
+        <fieldNames>Number_of_COI_s_Managed__c</fieldNames>
+        <fieldNames>COI_Management_System__c</fieldNames>
+        <fieldNames>Engage_with_a_MSP__c</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;GOAL &amp;gt; COMPREHENSION&lt;/b&gt;&lt;/p&gt;&lt;p&gt;To be considered Marketing Qualified at least 1 of the MQL questions will be answered, the goal is to learn from this individual if their company is a qualified Lois and specifically if they are part of that decision making process. If the individual is not but you have not yet obtained information about who that is, continue to populate company based information with this lead. Once the correct resource has been identified - convert the lead to a contact/account and add the new lead. Once the new lead is vetted convert to a contact and attach to the existing account record. &lt;/p&gt;</info>
+        <picklistValueName>MQL</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Name</fieldNames>
+        <fieldNames>Company</fieldNames>
+        <fieldNames>Email</fieldNames>
+        <fieldNames>Job_Role__c</fieldNames>
+        <fieldNames>Title</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;GOAL &amp;gt; AWARENESS&lt;/b&gt;&lt;/p&gt;</info>
+        <picklistValueName>Nurture</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Email</fieldNames>
+        <fieldNames>mkto_si__Last_Interesting_Moment_Date__c</fieldNames>
+        <info>&lt;p&gt;Valid email&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Just acquired (list, reference, event, etc.) and need to learn more&lt;/li&gt;&lt;li&gt;Valid email and possibly additional information, but no actionable interest in 3 months&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Prospect</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;b&gt;IGNORE PHASE FOR MEMBERS (CLARK ONLY)&lt;/b&gt;&lt;/p&gt;</info>
+        <picklistValueName>Qualified</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Unqualified_Reason__c</fieldNames>
+        <fieldNames>Is_Junk__c</fieldNames>
+        <fieldNames>zisf__Person_Has_Moved__c</fieldNames>
+        <picklistValueName>Unqualified</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Member_Sales</recordTypeName>
+</PathAssistant>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Minimum_Premium__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Minimum Premium</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If there is a minimum due premium this box is checked, true.</inlineHelpText>
+    <label>Minimum Premium</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Default</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;strong&gt;Revise techniques to increase future wins.&lt;/strong&gt;
+
+&lt;ul&gt;&lt;li&gt;What contributed to losing this opportunity?&lt;/li&gt;&lt;li&gt;What do we need to do differently to improve our chances of winning?&lt;/li&gt;&lt;li&gt;Schedule a follow-up task or event for this account.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Closed Lost</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Amount</fieldNames>
+        <info>&lt;img alt=&quot;User-added image&quot; src=&quot;https://buildbunker--pwrfluence.sandbox.file.force.com/servlet/rtaImage?eid=1CF410000000zVw&amp;amp;feoid=Info&amp;amp;refid=0EM41000000S0d3&quot; style=&quot;height: 118px; width: 500px;&quot;&gt;&lt;/img&gt;</info>
+        <picklistValueName>Closed Won</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Before moving the Opportunity to &amp;quot;Proposal Sent to Customer&amp;quot; please verify the following is added to the Opportunity Products-&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Billing Type&lt;/li&gt;&lt;li&gt;Commission Rate&lt;/li&gt;&lt;li&gt;Carrier&lt;ul&gt;&lt;li&gt;Please add Broker information if Carrier is Broker&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Sales Price&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Development</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Before moving the Opportunity to &amp;quot;Closed Won&amp;quot; please verify the following is added to the Opportunity Products-&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;ql-indent-1&quot;&gt;&lt;b&gt;For Direct Bill Products-&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Coverage Limits&lt;ul&gt;&lt;li&gt;Effective Date&lt;/li&gt;&lt;li&gt;Expiration Date&lt;/li&gt;&lt;li&gt;Carrier Policy Number&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p class=&quot;ql-indent-1&quot;&gt;&lt;b&gt;For Agency/Agency - Premium Fincancing Products-&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Coverage Limits&lt;ul&gt;&lt;li&gt;Effective Date&lt;/li&gt;&lt;li&gt;Expiration Date&lt;/li&gt;&lt;li&gt;Carrier Policy Number&lt;/li&gt;&lt;li&gt;Invoice Date&lt;/li&gt;&lt;li&gt;Invoice Number&lt;/li&gt;&lt;li&gt;Invoice Paid&lt;/li&gt;&lt;li&gt;Transaction Date&lt;/li&gt;&lt;li&gt;Payment ID Number&lt;/li&gt;&lt;li&gt;Billing Frequency&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Proposals Sent to Customer</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

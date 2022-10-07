@@ -1,0 +1,1 @@
+({generateDocs : function(component) {component.find('generator').generateDocs()},close : function(component) {$A.get('e.force:closeQuickAction').fire()},})

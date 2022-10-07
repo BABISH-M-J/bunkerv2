@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Policy_Coverage_Limit_Compact</fullName>
+    <fields>Name</fields>
+    <fields>Limit_Amount__c</fields>
+    <label>Policy Coverage Limit Compact</label>
+</CompactLayout>

@@ -1,0 +1,1 @@
+<apex:page standardController="Opportunity" id="a0X2M00000Fb9hnUAB" recordSetVar="records" extensions="pdffiller_sfree.CustomPageControllerV2" action="{!redirect}"></apex:page>
